@@ -1,0 +1,25 @@
+#GitHub Actions 
+
+#Имя пишется без пробелов 
+name: My-GithubActions
+
+#
+on: 
+  push:
+    branches: 
+      - master
+      
+#Блок тасков
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    #Шаги и команды
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello World from testing"
+      
+  my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello World from deploy"

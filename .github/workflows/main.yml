@@ -7,7 +7,7 @@ name: My-GithubActions
 on: 
   push:
     branches: 
-      - master
+      - main
       
 #Блок тасков
 jobs:
